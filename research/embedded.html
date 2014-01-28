@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Embedded and real time system verification &#8211; Shobha Vasudevan</title>
+<meta name="description" content="">
+<meta name="keywords" content="about, bio">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Embedded and real time system verification &#8211; Shobha Vasudevan">
+<meta property="og:description" content="Integrated systems are ubiquitous in the world we live in- mobile devices, biomedical, automobile, security, missile,...">
+<meta property="og:url" content="http://profsv.github.io/research/embedded.html">
+<meta property="og:site_name" content="Shobha Vasudevan">
+
+
+<link href="http://profsv.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Shobha Vasudevan Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='http://profsv.github.io/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://profsv.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://profsv.github.io/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">Shobha Vasudevan</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="Shobha Vasudevan">Home</a>
+            </li>
+            
+            
+                <li><a href="http://profsv.github.io/about" >About</a></li>
+            
+                <li><a href="http://profsv.github.io/research" >Reseach</a></li>
+            
+                <li><a href="http://profsv.github.io/publications" >Publications</a></li>
+            
+                <li><a href="http://profsv.github.io/outreach" >Outreach</a></li>
+            
+                <li><a href="http://profsv.github.io/teaching" >Teaching</a></li>
+            
+                <li><a href="http://profsv.github.io/students" >Students</a></li>
+            
+                <li><a href="http://profsv.github.io/downloads" >Downloads</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url(http://profsv.github.io/images/soft-trees.jpg)"></div>
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Embedded and real time system verification</h1>
+            <p class="date"></p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+
+        <p>Integrated systems are ubiquitous in the world we live in- mobile devices, biomedical, automobile, security, missile, aeronautics systems and many others are all heterogeneous in composition and versatile in functionality. System level design is frequently described at the transaction level, where hardware, software and control components can be integrated on a single platform. The design issues are compounded at this higher level. Verification, performance analysis, reliability etc of the entire system is daunting due to the complexity of these systems. Algorithms and tools to assist design are few and far between at this level. 
+Our research is aimed at reliability, verification and performance/power analysis at the “system” level. We can generate functional assertions at the system level by mining transactions and guiding them with structural analysis. This provides system level design insights. Since performance and power are very important design parameters at system level, we generate performance assertions. We have developed powerful techniques for diagnosing performance violations and root causing the problem from transaction trace files that are 7-10 GB in size. 
+In systems where the system level design is used as an executable specification for the RTL design, we have researched methods to perform sequential equivalence checking. These include assertion based equivalence checking between system level and RTL design. 
+We are generating constraints in hard real time systems using Bayesian inferencing and formal methods, to be used for checking reliability and security of these systems.
+And so what…</p>
+
+<p>The diagnosis of root causes of performance failures was used in Future Wei Technologies for their wireless baseband systems. Transaction trace files are massive, ranging between 7-10 GB in size. When there is a performance violation, diagnosing the problem and finding the root cause takes several engineers 2-4 weeks per violation. 
+ Our solution used static domain analysis strategically with an algorithm called concurrent pattern mining that we invented. As a result of this technology, the developers of the baseband wireless system were able to isolate 7 bugs in 2 hours. This methodology is now fully operational in Future-Wei technologies. 
+Since we were not allowed access to internal proprietary software from the company, we developed a platform similar to the realistic platform used in the company over 5 months, and released it widely for research purposes. This is the first such open source AXI platform with a complex wireless baseband implementation that fills the void of lack of realistic testbeds in the system level research area.
+We are working with General Motors and Boeing Corporation for analyzing performance and security of real time systems. </p>
+
+<h3 id="resources">Resources:</h3>
+
+<p>•	Open source AXI platform with a complex baseband implementation is at https://code.google.com/tlmviolation
+•	Lingyi Liu, Xuanyu Zhong, Xiaotao Chen and Shobha Vasudevan, Diagnosing Root Causes of System Level Performance Violations, International Conference on Computer Aided Design (ICCAD) 2013: 295-302 
+•	Lingyi Liu, and Shobha Vasudevan, Automatic Generation of System Level Assertions from Transaction Level Models. Journal of Electronic Testing: Theory and Applications (JETTA) 29(5): 669-684 (2013)
+•	Lingyi Liu, David Sheridan, Viraj Athavale, Shobha Vasudevan: Automatic generation of assertions from system level design using data mining, , International Conference on Formal Methods and Models for Codesign (MEMOCODE ) 2011: 191-200
+•	Parth Sagdeo, Viraj Athavale Sumant Kowshik and Shobha Vasudevan PRECIS: Inferring Invariants using Program Path Guided Clustering, International Conference on Automated Software Engineering (ASE) 2011: 532-535 
+•	Parth Sagdeo, Nicholas Ewalt, Debjit Pal and Shobha Vasudevan, Using Automatically Generated Invariants for Regression Testing and Bug Localization, International Conference on Automated Software Engineering (ASE) 2013: 634-639
+•	Shobha Vasudevan, Vinod Viswanath, J. A. Abraham, and Jiajin Tu. Sequential Equivalence Checking of System Level and RTL Descriptions, Design Automation for Embedded Systems (DAEM). 12(4): 377-396 (2008)
+•	Shobha Vasudevan, Vinod Viswanath, J. A. Abraham, and Jiajin Tu. Automatic Decomposition for Sequential Equivalence Checking of System Level and RTL Descriptions, International Conference on Formal Methods and Models for Codesign (MEMOCODE) 2006: 71-80</p>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Embedded and real time system verification&quot;%20http://profsv.github.io/research/embedded.html%20via%20&#64;shobhav" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+
+      </article>
+
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/goldmine-website" title="Goldmine website live and kicking!">Goldmine website live and k... </a></span>
+              <span class="date">Jan 24, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/sys-assertion" title="System level assertion generation for performance and functionality">System level assertion gene... </a></span>
+              <span class="date">Jan 23, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/ase2013" title="Our paper on invariant mining for debugging programs in ASE 2013">Our paper on invariant mini... </a></span>
+              <span class="date">Jan 22, 2014</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:shobhav@illinois.edu"><span class="foot-link">Contact Me</span></a></li>
+
+            
+            <li><a id="twit" href="http://twitter.com/shobhav" target="_blank"><span class="foot-link">@shobhav</span></a></li>
+            
+
+
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2014 Shobha Vasudevan. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="http://profsv.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="http://profsv.github.io/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="http://profsv.github.io/assets/js/scripts.js"></script>
+
+
+  </body>
+</html>
+

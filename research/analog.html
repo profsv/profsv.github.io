@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Analog and mixed signal verification and validation &#8211; Shobha Vasudevan</title>
+<meta name="description" content="">
+<meta name="keywords" content="about, bio">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Analog and mixed signal verification and validation &#8211; Shobha Vasudevan">
+<meta property="og:description" content="### What:Analog and mixed-signal designs are rapidly becoming all pervasive in mobile computing , security, health mo...">
+<meta property="og:url" content="http://profsv.github.io/research/analog.html">
+<meta property="og:site_name" content="Shobha Vasudevan">
+
+
+<link href="http://profsv.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Shobha Vasudevan Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='http://profsv.github.io/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://profsv.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://profsv.github.io/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">Shobha Vasudevan</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="Shobha Vasudevan">Home</a>
+            </li>
+            
+            
+                <li><a href="http://profsv.github.io/about" >About</a></li>
+            
+                <li><a href="http://profsv.github.io/research" >Reseach</a></li>
+            
+                <li><a href="http://profsv.github.io/publications" >Publications</a></li>
+            
+                <li><a href="http://profsv.github.io/outreach" >Outreach</a></li>
+            
+                <li><a href="http://profsv.github.io/teaching" >Teaching</a></li>
+            
+                <li><a href="http://profsv.github.io/students" >Students</a></li>
+            
+                <li><a href="http://profsv.github.io/downloads" >Downloads</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url(http://profsv.github.io/images/soft-trees.jpg)"></div>
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Analog and mixed signal verification and validation</h1>
+            <p class="date"></p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+
+        <h3 id="what">What:</h3>
+<p>Analog and mixed-signal designs are rapidly becoming all pervasive in mobile computing , security, health monitoring and automotive systems. Out of 28 chips in the iPhone5, 20 of them are analog/mixed signal based! The design processes are very complicated in these domains as compared to digital design, due to the nonlinear behavior, continuous state spaces, as well as the traditional method of physical optimization-based notions of correctness. Most of the current practice in analog designs is ad-hoc, random simulations. Analog CAD has not seen wide adoption, due to a very intuition-centric design methodology in analog. Monte Carlo simulations, that are a de facto gold standard for analog behavior simulation, fall very short of providing a validation environment. A validation conducive methodology must provide an ability to generate input stimulus, control the type of simulations, specify desired constraints or trigger events, as well as provide debugging, diagnosis capacity and a method to evaluate the test coverage. </p>
+
+<h3 id="how">How:</h3>
+
+<p>Rapidly-exploring random trees (RRTs) are data structures used for robot motion planning. The algorithm to build these data structures is a simulation of nonlinear behavior in continuous spaces. We have extended the RRT with the ability to specify goal regions or interesting regions in the state space, and bias the simulations towards those regions. We are also able to guide the simulation to cover more of the state space than in regular RRTs. We have specified and monitored properties using RRTs during runtime.  We would like to specify properties in the frequency domain and monitor them, instead of the time domain analysis from the digital world that is not natural to analog specifications. We have developed a formal verification algorithm for analog using polytope reachability analysis. 
+And so what: </p>
+
+<p>We are working on debug and diagnosis of sources of variation and noise in analog circuits. Our vision and long term goal is to theoretically analyze the RRT and generate bounds and confidence estimates that would help replace the traditional Monte Carlo simulations with the RRT-based validation paradigm. We are extending the methods and models using RRTs to mixed signal designs. The broader impact of this solution is to provide a “foot in the door” for algorithmic CAD/EDA methodologies into the analog design house. Our verification methodology is simulation based, and therefore scalable (although incomplete) and accessible to the analog designer. It can be built on SPICE as well as Verilog AMS levels.<br />
+This work is being done in collaboration with Texas Instruments and Intel Corporation. </p>
+
+<h3 id="resources">Resources:</h3>
+<ul>
+  <li>Seyed Nematollah Ahmadyan, Jayanand Asok Kumar and Shobha Vasudevan, Goal-oriented stimulus generation for analog circuits, Design Automation Conference (DAC) 2012: 1018-1023</li>
+  <li>Seyed Nematollah Ahmadyan and Shobha Vasudevan, Reachability Analysis of Nonlinear Analysis through Iterative Reachable Set Reduction, Design Automation and Test in Europe (DATE) 2013: 1436-1441</li>
+  <li>Seyed Nematollah Ahmadyan and Shobha Vasudevan, Efficient Stochastic SAT Solving Using Random Graphs. Invited paper in Workshop for Constraints in Formal Verification (CFV), 2013</li>
+  <li>Seyed Nematollah Ahmadyan and Shobha Vasudevan, Runtime Verification of Nonlinear Analog Circuits Using Incremental Time-Augmented RRT Algorithm, Design Automation and Test in Europe (DATE) 2013: 21-26</li>
+</ul>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Analog and mixed signal verification and validation&quot;%20http://profsv.github.io/research/analog.html%20via%20&#64;shobhav" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+
+      </article>
+
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/goldmine-website" title="Goldmine website live and kicking!">Goldmine website live and k... </a></span>
+              <span class="date">Jan 24, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/sys-assertion" title="System level assertion generation for performance and functionality">System level assertion gene... </a></span>
+              <span class="date">Jan 23, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/ase2013" title="Our paper on invariant mining for debugging programs in ASE 2013">Our paper on invariant mini... </a></span>
+              <span class="date">Jan 22, 2014</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:shobhav@illinois.edu"><span class="foot-link">Contact Me</span></a></li>
+
+            
+            <li><a id="twit" href="http://twitter.com/shobhav" target="_blank"><span class="foot-link">@shobhav</span></a></li>
+            
+
+
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2014 Shobha Vasudevan. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="http://profsv.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="http://profsv.github.io/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="http://profsv.github.io/assets/js/scripts.js"></script>
+
+
+  </body>
+</html>
+

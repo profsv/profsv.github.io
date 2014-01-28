@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>GoldMine &#8211; Shobha Vasudevan</title>
+<meta name="description" content="Automatic assertion generation in RTL">
+<meta name="keywords" content="research, verification">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="GoldMine &#8211; Shobha Vasudevan">
+<meta property="og:description" content="Automatic assertion generation in RTL">
+<meta property="og:url" content="http://profsv.github.io/research/goldmine.html">
+<meta property="og:site_name" content="Shobha Vasudevan">
+
+
+<link href="http://profsv.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Shobha Vasudevan Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='http://profsv.github.io/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://profsv.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://profsv.github.io/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">Shobha Vasudevan</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="Shobha Vasudevan">Home</a>
+            </li>
+            
+            
+                <li><a href="http://profsv.github.io/about" >About</a></li>
+            
+                <li><a href="http://profsv.github.io/research" >Reseach</a></li>
+            
+                <li><a href="http://profsv.github.io/publications" >Publications</a></li>
+            
+                <li><a href="http://profsv.github.io/outreach" >Outreach</a></li>
+            
+                <li><a href="http://profsv.github.io/teaching" >Teaching</a></li>
+            
+                <li><a href="http://profsv.github.io/students" >Students</a></li>
+            
+                <li><a href="http://profsv.github.io/downloads" >Downloads</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url(http://profsv.github.io/images/soft-trees.jpg)"></div>
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>GoldMine</h1>
+            <p class="date"></p>
+            <p class="intro">Automatic assertion generation in RTL</p>
+          </hgroup>
+        </header>
+
+        <h3 id="what-is-goldmine">What is GoldMine?</h3>
+
+<p>GoldMine is a tool suite of algorithms for automatic assertion generation. Verification is the process of checking that the implemented design (hardware) meets the required specification. With the growing number of transistors in an integrated circuit, the task of verification is far more challenging than the development of the system itself (the distribution of time and resources is roughly 70-30 between verification and development).  Problems in verification are in the complexity class NP and worse, presenting a major intellectual challenge to the community. Among the chief challenges in verification is property specification, or the expression of desired intent from a system. The whole verification process hinges on “knowing what one is looking for”. To painstakingly write these properties can take many man-months
+Assertions are manually generated summaries of system specification that are useful throughout the system development cycle. Assertions have emerged as a popular candidate verification solution (a recent study mentions an increase from 37% to 69% in assertion usage over 3 years). However, assertion generation is as yet a manually intensive task that is very difficult for designers not trained in verification and temporal logics. </p>
+
+<h3 id="how-goldmine-works">How Goldmine works?</h3>
+
+<p>GoldMine combines statistical, dynamic methods (data mining) with static, deterministic methods (source code static analysis and formal verification). Data mining algorithms make inferences about the dynamic behavioral data of the system, while formal verification is used to check the truth/falsehood of the inferences. Static source code analysis of RTL is used to provide domain guidance to the data miner. Such inferred assertions can capture complex functional and temporal properties of the hardware, which can surpass assertions generated by human reasoning. At present, GoldMine uses 7 specialized data mining algorithms along with complex RTL static analysis technology. GoldMine has enabling technologies for assertion generation like estimating RTL statement coverage of assertions and word level assertion generation, both of which are research problems with no good existing solutions. GoldMine is able to rank assertions automatically with respect to their value in the system design.</p>
+
+<h3 id="and-so-what">And so what…</h3>
+
+<p>Several EDA tools have burgeoned in the area of automatic assertion generation. Many of the product teams have approached Prof. Vasudevan over the past 3 years with proposals for collaboration. Two leading EDA companies (name withheld for IP confidentiality) have licensed GoldMine. GoldMine is being developed as a product by a leading EDA company. GoldMine is also popular among users of the technology. It is being licensed by UIUC to many users. Users of GoldMine include Qualcomm Inc., Broadcomm Corporation, Oracle Corporation, Huawei Technologies, AMD, Texas Instruments and IBM. GoldMine was judged one of the most popular tools at DVCon, which is a verification industry practitioners’ conference. ). GoldMine is being used by several universities teaching RTL design, to automatically grade assignments designed by students in Verilog RTL. Our team provides technical support to 17 universities including CMU, Princeton, UC Berkeley that are using GoldMine for research purposes. </p>
+
+<h3 id="broader-impact-of-solution">Broader impact of solution:</h3>
+
+<p>GoldMine automates a ubiquitous but currently manual system design process. This has a broad impact on utilization and channeling of human and computing resources within the system’s verification cycle. The marriage of statistical and static analysis methods to infer domain specific knowledge is a “meta-technique” that can be used in other domains where we need to analyze the systems that we build. This “GoldMine principle” has already been applied across the board- to software testing, real time software performance analysis, embedded and system level functional checking as well as in ensuring security and privacy of systems.<br />
+Resources: </p>
+
+<p>GoldMine can be downloaded from <a href="goldmine.csl.illinois.edu">goldmine.csl.illinois.edu</a> for research and academic purposes. If you are a commercial entity that wants access to the tool, please contact Prof. Shobha Vasudevan by email. </p>
+
+<h3 id="publications-and-patents">Publications and patents</h3>
+
+<ul>
+  <li>
+    <p>Lingyi Liu, David Sheridan, William Tuohy and Shobha Vasudevan, A Technique for Test Coverage Closure Using GoldMine. IEEE Trans. on CAD of Integrated Circuits and Systems (IEEE TCAD)31(5): 790-803 (2012)</p>
+  </li>
+  <li>
+    <p>Samuel Hertz, David Sheridan and Shobha Vasudevan. A Combination of Data Mining and Static Analysis to Automatically Infer Assertions IEEE Trans. on CAD of Integrated Circuits and Systems 31 (IEEE TCAD) 32 (6): 952-965(2013)</p>
+  </li>
+  <li>
+    <p>Shobha Vasudevan, David Sheridan, Sanjay Patel, Bill Tuohy. GoldMine: Automatic generation of assertions using data mining and static analysis, Design Automation and Test in Europe (DATE) 2010:626-629</p>
+  </li>
+  <li>
+    <p>Lingyi Liu, David Sheridan, William Tuohy, Shobha Vasudevan Towards coverage closure: Using GoldMine assertions for generating design validation stimulus, Design Automation and Test in Europe (DATE) 2011: 173-178</p>
+  </li>
+  <li>
+    <p>Shobha Vasudevan, GoldMine: Automatic assertion generation using data mining and static analysis, Design and Verification Conference, (DVCON) 2011</p>
+  </li>
+  <li>
+    <p>Hyungsul Kim, David Sheridan, Sungjin Im, Shobha Vasudevan, Tarek Abdelzaher and Jiawei Han, Signature Pattern Covering via Local Greedy Algorithm and Pattern Shrink, , 2011 International Conference on Data Mining ( ICDM) 2011: 330-339</p>
+  </li>
+  <li>
+    <p>Lingyi Liu, Chen Hsuan Lin and Shobha Vasudevan, Word Level Feature Discovery to Enhance Quality of Assertion Mining, International Conference on Computer Aided Design ( ICCAD) 2012: 210-217</p>
+  </li>
+  <li>
+    <p>Chen-Hsuan Lin, Lingyi Liu and Shobha Vasudevan, Generating concise assertions with complete coverage, ACM Great Lakes Symposium on VLSI (GLSVLSI) 2013, pp 185-190</p>
+  </li>
+  <li>
+    <p>David Sheridan, Lingyi Liu, Hyungsul Kim and Shobha Vasudevan , A Coverage Guided Mining Approach for Automatic Generation of Succinct Assertions. In Proceedings of International Conference on VLSI Design (VLSI Design) 2014 </p>
+  </li>
+  <li>
+    <p>Shobha Vasudevan, David Sheridan ,Lingyi Liu and Hyung Sul Kim INTEGRATION OF DATA MINING AND STATIC ANALYSIS FOR HARDWARE DESIGN VERIFICATION. U.S. Patent Application No. 20130019216 (pending)</p>
+  </li>
+</ul>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;GoldMine&quot;%20http://profsv.github.io/research/goldmine.html%20via%20&#64;shobhav" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+
+      </article>
+
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/goldmine-website" title="Goldmine website live and kicking!">Goldmine website live and k... </a></span>
+              <span class="date">Jan 24, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/sys-assertion" title="System level assertion generation for performance and functionality">System level assertion gene... </a></span>
+              <span class="date">Jan 23, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/ase2013" title="Our paper on invariant mining for debugging programs in ASE 2013">Our paper on invariant mini... </a></span>
+              <span class="date">Jan 22, 2014</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:shobhav@illinois.edu"><span class="foot-link">Contact Me</span></a></li>
+
+            
+            <li><a id="twit" href="http://twitter.com/shobhav" target="_blank"><span class="foot-link">@shobhav</span></a></li>
+            
+
+
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2014 Shobha Vasudevan. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="http://profsv.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="http://profsv.github.io/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="http://profsv.github.io/assets/js/scripts.js"></script>
+
+
+  </body>
+</html>
+

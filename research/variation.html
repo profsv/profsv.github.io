@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Variation-aware performance and power analysis &#8211; Shobha Vasudevan</title>
+<meta name="description" content="">
+<meta name="keywords" content="about, bio">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Variation-aware performance and power analysis &#8211; Shobha Vasudevan">
+<meta property="og:description" content="### What and whyManufacturing variations in semiconductor devices introduce unpredictability in how these circuits be...">
+<meta property="og:url" content="http://profsv.github.io/research/variation.html">
+<meta property="og:site_name" content="Shobha Vasudevan">
+
+
+<link href="http://profsv.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Shobha Vasudevan Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='http://profsv.github.io/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://profsv.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://profsv.github.io/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">Shobha Vasudevan</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="Shobha Vasudevan">Home</a>
+            </li>
+            
+            
+                <li><a href="http://profsv.github.io/about" >About</a></li>
+            
+                <li><a href="http://profsv.github.io/research" >Reseach</a></li>
+            
+                <li><a href="http://profsv.github.io/publications" >Publications</a></li>
+            
+                <li><a href="http://profsv.github.io/outreach" >Outreach</a></li>
+            
+                <li><a href="http://profsv.github.io/teaching" >Teaching</a></li>
+            
+                <li><a href="http://profsv.github.io/students" >Students</a></li>
+            
+                <li><a href="http://profsv.github.io/downloads" >Downloads</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url(http://profsv.github.io/images/soft-trees.jpg)"></div>
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Variation-aware performance and power analysis</h1>
+            <p class="date"></p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+
+        <h3 id="what-and-why">What and why</h3>
+
+<p>Manufacturing variations in semiconductor devices introduce unpredictability in how these circuits behave by making key design parameters such as delays, power consumption, error tolerance and lifetime increasingly unpredictable. This has made microelectronic system design more challenging at all levels, as the traditional guardbands to hide such variations have vastly exceeded design flexibility available in circuit-level implementations. We need better models and methods to accurately account for the effect of well-characterized variability mechanisms and use these at RT- and system-level designs where much greater flexibility exists to restructure designs to mitigate these effects. 
+Traditional design verification only checks for functional correctness. It does not check for performance/power properties at RT-level. Instead of being variation-agnostic, if the RTL design is aware of the variations at the lower level, it can generate early reliable estimates of performance and power. This can drastically reduce the overhead of changing a design decision after reaching the gate/circuit level. 
+How
+Our group has developed SHARPE, a tool suite that can give formal statistical guarantees on RTL designs. Given an input probability distribution and an RTL design, the tool computes signal probabilities through static analysis of the RTL design. It uses probabilistic model checking to check the property in the RTL Markov model. We have developed compositional methods to scale probabilistic model checking for their purpose. The tool also has a statistical model checking option in RTL. As the number of simulation samples increase, the confidence in the property becomes higher. This is a more scalable, semi-formal method to give statistical guarantees. We have also developed methods to accelerate statistical model checking for multiple failure regions using clustering and Variational Bayesian inference. So far, SHARPE has been used for providing guarantees on performance for better-than-worst-case designs. We have also used SHARPE for analyzing NBTI ageing effects at RTL and to verify dynamic power management schemes. </p>
+
+<h3 id="and-so-what">And so what…</h3>
+
+<p>The SHARPE solution for analyzing NBTI effects early in the design cycle was developed as part of a collaboration withTexas Instruments. TI circuits that are vulnerable to NBTI effects were detected at the transistor level, which caused a significant delay and resource wastage when the design decisions needed to be revised at the higher levels. Prof. Vasudevan’s student, Jayanand Asok Kumar won the silver medal at the ACM SRC (student research competition) in DAC 2011 for the NBTI solution. Prof Vasudevan and her students are actively engaged with the researchers in the NSF Expeditions program for variability.
+The SHARPE project has researched techniques that will improve predictability of design parameters, and build a new generation of variability-aware design optimization and synthesis tools.</p>
+
+<h3 id="what-next">What next?</h3>
+
+<p>Power is critically important to modern systems. We want to analyze and estimate power at the higher levels of design. This can be used for power optimizations as well as for providing power budgets and contracts to the software applications and algorithms that rely on these estimates. 
+We would like to models from experimental data that provide increased observability of variability effects in RT- and system-level designs and new verification and design optimization techniques that enable efficient quantification and checking of variability affected design properties. </p>
+
+<h3 id="resources">Resources:</h3>
+
+<ul>
+  <li>
+    <p>Jayanand Asok Kumar and Shobha Vasudevan. Formal performance analysis for faulty MIMO hardware. IEEE Transactions on Very Large Scale Integrated Systems ( IEEE TVLSI) 20(10): 1914-1918 (2012). </p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar and Shobha Vasudevan, Formal probabilistic timing verification in RTL, IEEE Transactions on CAD of Integrated Ciruits and Systems (IEEE TCAD), 32 (5): 788-801(2013)</p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar, Seyed Nematolllah Ahmadyan and Shobha Vasudevan, Efficient statistical model checking of hardware circuits with multiple failure regions. Accepted. To appear in IEEE Transactions on CAD of Integrated Ciruits and Systems (IEEE TCAD)</p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar, Kenneth M Butler, Heesoo Kim and Shobha Vasudevan, Early prediction of NBTI effects using RTL source code analysis, Design Automation Conference (DAC) 2012: 808-813</p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar Lingyi Liu and Shobha Vasudevan, Scaling Probabilistic Timing Verification of Hardware Using Abstractions in Design Source Code, Formal Methods in Computer Aided Design, (FMCAD) 2011: 196-205</p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar and Shobha Vasudevan: Verifying dynamic power management schemes using statistical model checking. Asia South Pacific Design Automation Conference (ASP-DAC) 2012: 579-584</p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar and Shobha Vasudevan, Variation-Conscious Formal Timing Verification in RTL, International Conference on VLSI Design (VLSI Design) 2011:58-63</p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar and Shobha Vasudevan Statistical Guarantees of Performance for MIMO Designs, International Conference on Dependable Systems and Networks (DSN) 2010</p>
+  </li>
+  <li>
+    <p>Jayanand Asok Kumar and Shobha Vasudevan Automatic compositional reasoning for probabilistic model checking of hardware designs, International Conference on Quantitative Evaluation of Systems (QEST) 2010</p>
+  </li>
+  <li>
+    <p>Vinod Viswanath, Shobha Vasudevan and J. A. Abraham. Dedicated Rewriting: Automatic Verification of Low Power Transformations in RTL, International Conference on VLSI Design (VLSI Design) 2009: 77-82</p>
+  </li>
+</ul>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Variation-aware performance and power analysis&quot;%20http://profsv.github.io/research/variation.html%20via%20&#64;shobhav" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+
+      </article>
+
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/goldmine-website" title="Goldmine website live and kicking!">Goldmine website live and k... </a></span>
+              <span class="date">Jan 24, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/sys-assertion" title="System level assertion generation for performance and functionality">System level assertion gene... </a></span>
+              <span class="date">Jan 23, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/ase2013" title="Our paper on invariant mining for debugging programs in ASE 2013">Our paper on invariant mini... </a></span>
+              <span class="date">Jan 22, 2014</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:shobhav@illinois.edu"><span class="foot-link">Contact Me</span></a></li>
+
+            
+            <li><a id="twit" href="http://twitter.com/shobhav" target="_blank"><span class="foot-link">@shobhav</span></a></li>
+            
+
+
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2014 Shobha Vasudevan. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="http://profsv.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="http://profsv.github.io/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="http://profsv.github.io/assets/js/scripts.js"></script>
+
+
+  </body>
+</html>
+

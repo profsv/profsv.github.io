@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Digital verification, validation and test &#8211; Shobha Vasudevan</title>
+<meta name="description" content="">
+<meta name="keywords" content="about, bio">
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Digital verification, validation and test &#8211; Shobha Vasudevan">
+<meta property="og:description" content="Design verification is unequivocally, the "pain point" of modern hardware and embedded systems. In terms of computati...">
+<meta property="og:url" content="http://profsv.github.io/research/digital.html">
+<meta property="og:site_name" content="Shobha Vasudevan">
+
+
+<link href="http://profsv.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Shobha Vasudevan Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='http://profsv.github.io/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://profsv.github.io/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://profsv.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://profsv.github.io/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header">
+      <div class="wrap">
+        <hgroup>
+          <h1><a href="/">Shobha Vasudevan</a></h1>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            <li>
+              <a href="/" title="Shobha Vasudevan">Home</a>
+            </li>
+            
+            
+                <li><a href="http://profsv.github.io/about" >About</a></li>
+            
+                <li><a href="http://profsv.github.io/research" >Reseach</a></li>
+            
+                <li><a href="http://profsv.github.io/publications" >Publications</a></li>
+            
+                <li><a href="http://profsv.github.io/outreach" >Outreach</a></li>
+            
+                <li><a href="http://profsv.github.io/teaching" >Teaching</a></li>
+            
+                <li><a href="http://profsv.github.io/students" >Students</a></li>
+            
+                <li><a href="http://profsv.github.io/downloads" >Downloads</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+<section class="article">
+
+
+  <div class="overlay"></div>
+  <div class="featured-image" style="background-image: url(http://profsv.github.io/images/soft-trees.jpg)"></div>
+
+
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Digital verification, validation and test</h1>
+            <p class="date"></p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
+
+        <p>Design verification is unequivocally, the “pain point” of modern hardware and embedded systems. In terms of computational and human resources spent, this is the bottleneck of every system development process. The reason is that correctness is not a negotiable feature in any system; however, the size and complexity of the systems that we want to build surpasses the computational capacity available to assure this correctness. In other words, we design systems we do not know to verify. There are many manifestations of the verification problem. Formal verification or exhaustive traversal of all reachable states to ensure correctness, although highly scalable now, cannot be used to verify the complete system due to computational capacity. Input stimulus generation is intractable for all system inputs. Constrained random testing or formal verification involves manually specifying constraints tediously. Coverage metrics that can capture the real value of tests and properties (assertions) are as yet elusive. Our research group has been working towards each of these issues in the larger verification problem. </p>
+
+<h3 id="automatic-input-stimulustest-generation">Automatic input stimulus/test generation:</h3>
+<p>Generating interesting, high coverage tests is a computationally complex problem. We have developed HYBRO and STAR, algorithms for generating test inputs based on static and dynamic analysis of the control data flow graph (CDFG) of the RTL design. 
+A GoldMine based counterexample guided decision tree learning method we invented, can achieve coverage closure and indicate when testing is “done” and can be stopped. This is a major challenge in verification, with most test coverage curves looking like plateaus after initial high coverage. Such an algorithm that monotonically increases coverage and converges to a provably correct, canonical data structure has not been shown before. This result has implications on the currently perceived limitations of random pattern generation and directed tests.</p>
+
+<h3 id="emulation-debugging-and-coverage">Emulation, debugging and coverage:</h3>
+<p>Simulation time for even the subset of inputs that we generate tests for is considerably high. Hence emulation methodologies are frequently used for expediting the simulation speed. Although the performance speedup is observed to be of the order of 300X, emulation has the handicap of having little to no observability. As a result, it is very difficult to assess coverage of a test that has passed during emulation, or determine what is in error when the test fails. These two aspects- coverage of a passing test and debugging of a failed test are two sides of the same coin. A related, emerging problem is debugging of the Register Transfer Level (RTL) design in general. When a test or an assertion fails, the resulting obligations are to localize the problem and diagnose what it is. Amidst thousands of lines of RTL source code, and heterogeneous IPs at the system level, manual debugging is a very arduous, time consuming process. Automatic methods for diagnosis and debug are highly desirable. </p>
+
+<h3 id="formal-methods-for-equivalence-checking-and-property-checking">Formal methods for equivalence checking and property checking:</h3>
+<p>We have developed methods based on static analysis of the design CDFG, that can perform equivalence checking between system level and RTL, as well as reduce the design space for model checking and other verification technologies. We have also developed automated deductive methods to verify circuits that are known to be hard for bit level verification algorithms like 128-bit multipliers. </p>
+
+<h3 id="resources">Resources:</h3>
+<p>•	Links for downloading HYBRO and STAR: http://users.crhc.illinois.edu/liu187/index.htm#tool
+•	GoldMine’s test coverage closure tool is available with the GoldMine download at http://goldmine.csl.illinois.edu
+•	Viraj Athavale,Sam Hertz, Darshan Jetly, Vijay Ganesan, Jim Krysl and Shobha Vasudevan, Using static analysis for coverage extraction from emulation/prototyping platforms, IEEE/ACM/IFIP international conference on Hardware/software codesign and system synthesis, (CODES+ISSS) 2012: 207-214
+•	Lingyi Liu and Shobha Vasudevan Efficient validation input generation in RTL using hybridized source code analysis, Design Automation and Test in Europe (DATE) 2011: 1596-1601
+•	Lingyi Liu and Shobha Vasudevan STAR: Generating Validation Inputs by Static Analysis of RTL, International High Level Design Validation and Test Workshop (HLDVT) 2009: 32-37 
+•	Lingyi Liu, Shobha Vasudevan, Scaling RTL property checking using feasible path analysis and decomposition, ACM Great Lakes Symposium on VLSI (GLSVLSI) 2013, pp 173-178
+•	Shobha Vasudevan, E. A. Emerson and J. A. Abraham. Improved Verification of Hardware Designs through Antecedent Conditioned Slicing, International Journal on Software Tools and Technology Transfer (STTT), 9(1): 89-101 (2007)
+•	Shobha Vasudevan, Vinod Viswanath, and J. A. Abraham . Efficient Microprocessor Verification Using Antecedent Conditioned Slicing, International Conference on (VLSI Design) 2007: 43-49
+•	Shobha Vasudevan and Jacob A. Abraham. Static Program Transformations for Efficient Software Model Checking, Book chapter in World Congress of Computers (WCC), 2004. IFIP Congress Topical Sessions 2004: 257-282
+•	Seyed Nematollah Ahmadyan and Shobha Vasudevan, Efficient Stochastic SAT Solving Using Random Graphs. Invited paper in Workshop for Constraints in Formal Verification (CFV), 2013
+•	Sankar Gurumurthy, Shobha Vasudevan and J. A. Abraham. Automated Mapping of Pre-Computed Module-Level Test Sequences to Processor Instructions, International Test Conference (ITC) 2005:10-20
+•	Sankar Gurumurthy, Shobha Vasudevan and J. A. Abraham. Automated functional propagation of module level test responses,  International Test Conference (ITC) 2006: 1-9</p>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Digital verification, validation and test&quot;%20http://profsv.github.io/research/digital.html%20via%20&#64;shobhav" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      
+
+
+      </article>
+
+    </section>
+</div>
+
+<div class="push"></div>
+  <footer>
+    <aside class="wrap">
+      <ol class="prev-posts">
+        <p class="list-title">Recent Posts</p>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/goldmine-website" title="Goldmine website live and kicking!">Goldmine website live and k... </a></span>
+              <span class="date">Jan 24, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/sys-assertion" title="System level assertion generation for performance and functionality">System level assertion gene... </a></span>
+              <span class="date">Jan 23, 2014</span>
+            </li>
+         <!-- for1 -->
+            <li>
+              <span class="recent-title"><a href="http://profsv.github.io/ase2013" title="Our paper on invariant mining for debugging programs in ASE 2013">Our paper on invariant mini... </a></span>
+              <span class="date">Jan 22, 2014</span>
+            </li>
+        
+      </ol>
+
+      <div class="social">
+        <ul>
+            <li><a id="mail" href="mailto:shobhav@illinois.edu"><span class="foot-link">Contact Me</span></a></li>
+
+            
+            <li><a id="twit" href="http://twitter.com/shobhav" target="_blank"><span class="foot-link">@shobhav</span></a></li>
+            
+
+
+            
+        </ul>
+    </div>
+    </aside>
+    <small>&copy; 2014 Shobha Vasudevan. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://jekyll.gtat.me/about">Balzac</a> theme.</small>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="http://profsv.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="http://profsv.github.io/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="http://profsv.github.io/assets/js/scripts.js"></script>
+
+
+  </body>
+</html>
+

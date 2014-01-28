@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Shobha Vasudevan</title>
+<subtitle type="text">Academic homepage.</subtitle>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://profsv.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="http://profsv.github.io" />
+<updated>2014-01-27T22:02:48-06:00</updated>
+<id>http://profsv.github.io/</id>
+<author>
+  <name>Shobha Vasudevan</name>
+  <uri>http://profsv.github.io/</uri>
+  <email>shobhav@illinois.edu</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Goldmine website live and kicking!]]></title>
+  <link rel="alternate" type="text/html" href="http://profsv.github.io/goldmine-website" />
+  <id>http://profsv.github.io/goldmine-website</id>
+  <published>2014-01-24T00:00:00-06:00</published>
+  <updated>2014-01-24T00:00:00-06:00</updated>
+  <author>
+    <name>Shobha Vasudevan</name>
+    <uri>http://profsv.github.io</uri>
+    <email>shobhav@illinois.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;http://goldmine.csl.illinois.edu/&quot;&gt;GoldMine&lt;/a&gt; is now available for academic and research purposes for free download. Please use for intended and new applications and give us your feedback! Like us on &lt;a href=&quot;https://www.facebook.com/CoordinatedScienceLab&quot;&gt;facebook&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/goldmine-logo.png&quot; alt=&quot;Goldmine logo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you need GoldMine for a commercial purpose, please write to Prof. Shobha Vasudevan for an evaluation license.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://profsv.github.io/goldmine-website&quot;&gt;Goldmine website live and kicking!&lt;/a&gt; was originally published by Shobha Vasudevan at &lt;a href=&quot;http://profsv.github.io&quot;&gt;Shobha Vasudevan&lt;/a&gt; on January 24, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[System level assertion generation for performance and functionality]]></title>
+  <link rel="alternate" type="text/html" href="http://profsv.github.io/sys-assertion" />
+  <id>http://profsv.github.io/sys-assertion</id>
+  <published>2014-01-23T00:00:00-06:00</published>
+  <updated>2014-01-23T00:00:00-06:00</updated>
+  <author>
+    <name>Shobha Vasudevan</name>
+    <uri>http://profsv.github.io</uri>
+    <email>shobhav@illinois.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Automatic Generation of System Level Assertions from Transaction Level Models. Lingyi Liu and Shobha Vasudevan. Accepted. To appear in Journal of Electronic Testing: Theory and Applications (JETTA)&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://profsv.github.io/sys-assertion&quot;&gt;System level assertion generation for performance and functionality&lt;/a&gt; was originally published by Shobha Vasudevan at &lt;a href=&quot;http://profsv.github.io&quot;&gt;Shobha Vasudevan&lt;/a&gt; on January 23, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Our paper on invariant mining for debugging programs in ASE 2013]]></title>
+  <link rel="alternate" type="text/html" href="http://profsv.github.io/ase2013" />
+  <id>http://profsv.github.io/ase2013</id>
+  <published>2014-01-22T00:00:00-06:00</published>
+  <updated>2014-01-22T00:00:00-06:00</updated>
+  <author>
+    <name>Shobha Vasudevan</name>
+    <uri>http://profsv.github.io</uri>
+    <email>shobhav@illinois.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Parth Sagdeo et al’s paper “Using Automatically Generated Invariants for Regression Testing and Bug Localization” introduces a novel bug localization methodology with PREAMBL, a predicate clustering and invariant guided tool. Invariants from PRECIS in ASE 2011 are used for software regression testing as well.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://profsv.github.io/ase2013&quot;&gt;Our paper on invariant mining for debugging programs in ASE 2013&lt;/a&gt; was originally published by Shobha Vasudevan at &lt;a href=&quot;http://profsv.github.io&quot;&gt;Shobha Vasudevan&lt;/a&gt; on January 22, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Watch our for our ICCAD 2013 paper on system level debug and diagnosis]]></title>
+  <link rel="alternate" type="text/html" href="http://profsv.github.io/iccad13" />
+  <id>http://profsv.github.io/iccad13</id>
+  <published>2014-01-21T00:00:00-06:00</published>
+  <updated>2014-01-21T00:00:00-06:00</updated>
+  <author>
+    <name>Shobha Vasudevan</name>
+    <uri>http://profsv.github.io</uri>
+    <email>shobhav@illinois.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Our paper “Diagnosing Root Causes of System Level Performance Violations” to be published in ICCAD 2013 uses a unique, data mining approach to pinpoint latency and throughput bottlenecks in system level designs. This problem was proposed by Huawei Technologies, and is a product of our collaboration with them.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://profsv.github.io/iccad13&quot;&gt;Watch our for our ICCAD 2013 paper on system level debug and diagnosis&lt;/a&gt; was originally published by Shobha Vasudevan at &lt;a href=&quot;http://profsv.github.io&quot;&gt;Shobha Vasudevan&lt;/a&gt; on January 21, 2014.&lt;/p&gt;</content>
+</entry>
+
+</feed>
